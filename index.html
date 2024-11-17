@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eBook de Investimentos - Transforme Sua Vida!</title>
+  <style>
+    /* Reset Básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f3f4f6;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Container */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Hero Section */
+    header {
+      background: linear-gradient(to right, #1e3a8a, #3b82f6);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    header .btn {
+      display: inline-block;
+      background: #fbbf24;
+      color: #1e3a8a;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    header .btn:hover {
+      background: #f59e0b;
+      transform: translateY(-5px);
+    }
+    header img {
+      margin-top: 2rem;
+      max-width: 90%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Seções */
+    section {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2.2rem;
+      color: #1e3a8a;
+      margin-bottom: 1.5rem;
+    }
+    section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    /* Lista de Benefícios */
+    .benefits ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      gap: 1.5rem;
+      padding: 0;
+    }
+    .benefits ul li {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      flex: 1 1 250px;
+      max-width: 300px;
+      transition: transform 0.3s ease;
+    }
+    .benefits ul li:hover {
+      transform: translateY(-10px);
+    }
+    .benefits ul li img {
+      max-width: 60px;
+      margin-bottom: 1rem;
+    }
+    .benefits ul li p {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    /* Testemunhos */
+    .testimonials {
+      background: #e5e7eb;
+      padding: 3rem 1rem;
+      border-radius: 10px;
+    }
+    .testimonials .testimonial {
+      background: white;
+      border-left: 5px solid #3b82f6;
+      padding: 2rem;
+      margin: 1.5rem 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .testimonials .testimonial p {
+      margin-bottom: 1rem;
+    }
+    .testimonials .testimonial span {
+      font-weight: bold;
+      color: #3b82f6;
+    }
+
+    /* Autor */
+    .author img {
+      border-radius: 50%;
+      max-width: 150px;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Call to Action */
+    .cta {
+      text-align: center;
+      background: linear-gradient(to right, #1e40af, #2563eb);
+      color: white;
+      padding: 4rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .cta h2 {
+      font-size: 2.4rem;
+      margin-bottom: 1.5rem;
+    }
+    .cta p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+    .cta .btn-primary {
+      background: #fbbf24;
+      color: #1e3a8a;
+      padding: 1.2rem 3rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    .cta .btn-primary:hover {
+      background: #f59e0b;
+      transform: scale(1.1);
+    }
+
+    /* Footer */
+    footer {
+      background: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      font-size: 0.9rem;
+      border-radius: 10px 10px 0 0;
+    }
+    footer a {
+      color: #fbbf24;
+      margin: 0 0.5rem;
+      transition: color 0.3s ease;
+    }
+    footer a:hover {
+      color: #f59e0b;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Descubra os Segredos dos Investimentos de Sucesso</h1>
+    <p>Transforme sua vida financeira com estratégias comprovadas.</p>
+    <a href="https://pay.kiwify.com.br/VGKLI7B" class="btn">Quero Começar Agora</a>
+  </div>
+</header>
+
+<section class="about container">
+  <h2>O Que Você Vai Aprender?</h2>
+  <p>Este eBook é o guia perfeito para quem deseja começar a investir com segurança e estratégia.</p>
+</section>
+
+<section class="benefits container">
+    <h2>Por Que Este eBook é Perfeito Para Você?</h2>
+    <ul>
+      <li>
+        <i class="fas fa-language fa-2x" style="color: #005c97;"></i>
+        <p>Linguagem Simples e Acessível</p>
+      </li>
+      <li>
+        <i class="fas fa-book fa-2x" style="color: #005c97;"></i>
+        <p>Exemplos Práticos e Diretos</p>
+      </li>
+      <li>
+        <i class="fas fa-user-tie fa-2x" style="color: #005c97;"></i>
+        <p>Dicas de Especialistas</p>
+      </li>
+    </ul>
+</section>  
+
+<section class="testimonials container">
+  <h2>Depoimentos de Leitores</h2>
+  <div class="testimonial">
+    <p>"Incrível! Aprendi a investir com mais confiança."</p>
+    <span>- Carla M.</span>
+  </div>
+  <div class="testimonial">
+    <p>"Simplesmente revolucionário. Recomendo!"</p>
+    <span>- Pedro A.</span>
+  </div>
+</section>
+
+<section id="cta" class="cta">
+    <h2><i class="fas fa-chart-line"></i> Invista no Seu Futuro</h2>
+    <p><strong>De R$99,99 por apenas R$29,90!</strong> Aproveite esta oferta imperdível e mude sua vida financeira agora mesmo.</p>
+    <a href="https://pay.kiwify.com.br/VGKLI7B" class="btn-primary"><i class="fas fa-shopping-cart"></i> Compre Agora</a>
+    <br><br><p>📅 Garantia de 7 dias! Não gostou? Seu dinheiro de volta.</p>
+</section>
+
+<footer>
+  <p>&copy; 2024 Todos os Direitos Reservados</p>
+</footer>
+
+</body>
+</html>
